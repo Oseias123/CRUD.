@@ -9,7 +9,7 @@ const cursos = ['FullStack Master', 'Desenvolvimento de Games', 'Viver de Youtub
 
 // Retornar um curso
 serve.get('/cursos/:index', (req, res) => {
-        const { index } = req.params;
+        const {index} = req.params;
 
         return res.json(cursos[index]);
 })
